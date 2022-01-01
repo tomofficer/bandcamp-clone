@@ -1,0 +1,9 @@
+.body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
