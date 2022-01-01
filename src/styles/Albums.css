@@ -1,0 +1,11 @@
+.albums__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.albums__album-item {
+}
+
+.albums__text--large {
+  color: white;
+}

@@ -1,5 +1,5 @@
-.header {
+.footer {
   display: flex;
   justify-content: center;
-  height: 250px;
+  background-size: cover;
 }
