@@ -53,8 +53,8 @@ const Albums = () => {
           <img src={plausibility} alt='' onClick={album2Click} />
         </div>
 
-        {showSlaughterhaus && <Slaughterhaus />}
-        {showPlausibility && <Plausibility />}
+        {showAlbum1 && <Slaughterhaus />}
+        {showAlbum2 && <Plausibility />}
       </div>
     </div>
   );
