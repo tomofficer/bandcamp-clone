@@ -23,3 +23,11 @@ function App() {
 }
 
 export default App;
+
+//Notes : need to separate Albums component from header and footer so i can render header and footer at all times.
+
+//look into how to code the slide out panels for each album, slide out from left for left and vice versa for right
+
+//look into where to store audio files appropriately for React apps, src/public?
+
+//look into styling audio/media players for js, is there any options at all?
