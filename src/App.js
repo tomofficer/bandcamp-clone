@@ -16,6 +16,8 @@ function App() {
         <Routes>
           <Route path='/album1' element={<Album1 />} />
           <Route path='/album2' element={<Album2 />} />
+          <Route path='/album1' element={<Album1 />} />
+          <Route path='/album2' element={<Album2 />} />
         </Routes>
       </BrowserRouter>
     </div>

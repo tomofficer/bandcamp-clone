@@ -52,7 +52,36 @@ const Albums = () => {
         <div className='albums__album-item'>
           <img src={plausibility} alt='' onClick={album2Click} />
         </div>
-
+        {showAlbum1 && <Slaughterhaus />}
+        {showAlbum2 && <Plausibility />}
+      </div>
+      <div className='albums__container'>
+        <div className='albums__album-item'>
+          <img src={slaughterhaus} alt='' onClick={album1Click} />
+        </div>
+        <div className='albums__album-item'>
+          <img src={plausibility} alt='' onClick={album2Click} />
+        </div>
+        {showAlbum1 && <Slaughterhaus />}
+        {showAlbum2 && <Plausibility />}
+      </div>
+      <div className='albums__container'>
+        <div className='albums__album-item'>
+          <img src={slaughterhaus} alt='' onClick={album1Click} />
+        </div>
+        <div className='albums__album-item'>
+          <img src={plausibility} alt='' onClick={album2Click} />
+        </div>
+        {showAlbum1 && <Slaughterhaus />}
+        {showAlbum2 && <Plausibility />}
+      </div>
+      <div className='albums__container'>
+        <div className='albums__album-item'>
+          <img src={slaughterhaus} alt='' onClick={album1Click} />
+        </div>
+        <div className='albums__album-item'>
+          <img src={plausibility} alt='' onClick={album2Click} />
+        </div>
         {showAlbum1 && <Slaughterhaus />}
         {showAlbum2 && <Plausibility />}
       </div>
