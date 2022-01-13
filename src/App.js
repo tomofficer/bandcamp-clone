@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -5,13 +6,32 @@ import Albums from './components/Albums';
 import Footer from './components/Footer';
 import Album1 from './components/Album1';
 import Album2 from './components/Album2';
+import Slider from './components/Slider';
+import Backdrop from './components/Backdrop';
 
 function App() {
+  //state variables
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  //click handler
+  const drawerToggleClick = () => {
+    setDrawerOpen(!drawerOpen);
+    console.log('toggling');
+  };
+
+  //backdrop logic
+  let backdrop;
+  if (drawerOpen === true) {
+    backdrop = <Backdrop />;
+  }
+
   return (
     <div className='App'>
       <BrowserRouter>
         <Header />
-        <Albums />
+        <Albums toggle={drawerToggleClick} />
+        <Slider show={drawerOpen} />
+        {backdrop}
         <Footer />
         <Routes>
           <Route path='/album1' element={<Album1 />} />

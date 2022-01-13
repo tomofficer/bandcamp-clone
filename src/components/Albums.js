@@ -5,7 +5,7 @@ import plausibility from '../design/images/plausibility.jpg';
 import Slaughterhaus from './Slaughterhaus';
 import Plausibility from './Plausibility';
 
-const Albums = () => {
+const Albums = ({ toggle }) => {
   //state variables
   const [showAlbum1, setShowAlbum1] = useState(false);
   const [showAlbum2, setShowAlbum2] = useState(false);
@@ -45,6 +45,7 @@ const Albums = () => {
 
   return (
     <div>
+      <button onClick={toggle}>SLIDER CLICK HERE</button>
       <div className='albums__container'>
         <div className='albums__album-item'>
           <img src={slaughterhaus} alt='' onClick={album1Click} />
