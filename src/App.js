@@ -21,7 +21,7 @@ function App() {
 
   //backdrop logic
   let backdrop;
-  if (drawerOpen === true) {
+  if (drawerOpen) {
     backdrop = <Backdrop />;
   }
 

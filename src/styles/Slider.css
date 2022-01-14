@@ -6,6 +6,8 @@ body {
   padding: 0;
   height: 100%;
 }
+
+/* Apply same logic to left side slider */
 .side-drawer {
   height: 100%;
   background: white;
